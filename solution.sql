@@ -9,7 +9,7 @@ SET account_balance=10.00 WHERE transactions_attempted=0 AND account_balance=0;
 -- 4. Select all users that have attempted 9 or more transactions.
 SELECT * FROM syntax_practice WHERE transactions_attempted>=9;
 -- 5. Get the username and account balance of the 3 users with the highest balances, sort highest to lowest balance. NOTE: Research LIMIT
-SELECT *
+SELECT username, account_balance
 FROM syntax_practice
 ORDER BY account_balance DESC
 LIMIT 3;
